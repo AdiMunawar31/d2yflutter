@@ -1,7 +1,7 @@
 //menu data list
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/screens/dashboard.dart';
-import 'package:flutter_widgets/screens/testing.dart';
+import 'package:flutter_widgets/screens/widgets/container.dart';
 
 List dataList = [
   //menu data item
@@ -14,20 +14,14 @@ List dataList = [
   //menu data item
   {
     "level": 0,
-    "icon": Icons.verified_outlined,
-    "title": "Account",
+    "icon": Icons.widgets,
+    "title": "Widgets",
     "children": [
       {
         "level": 1,
-        "icon": Icons.account_box,
-        "title": "Username",
-        "children": [
-          {
-            "title": "Change username",
-          },
-          {"title": "Reset Username"},
-          {"title": "History Of change"},
-        ],
+        "icon": Icons.check_box_outline_blank,
+        "title": "Container",
+        "screen": const MyContainer(),
       },
       {
         "level": 1,
@@ -48,8 +42,8 @@ List dataList = [
   //menu data item
   {
     "level": 0,
-    "icon": Icons.payments,
-    "title": "Payments",
+    "icon": Icons.library_books_sharp,
+    "title": "Packages",
     "children": [
       {
         "level": 1,
@@ -142,7 +136,7 @@ List dataList = [
     "title": "Favorite",
     "children": [
       {"level": 1, "icon": Icons.water, "title": "Swimming", "screen": Dashboard()},
-      {"level": 1, "icon": Icons.sports_football, "title": "Football", "screen": MyWidget()},
+      {"level": 1, "icon": Icons.sports_football, "title": "Football", "screen": Dashboard()},
       {"level": 1, "icon": Icons.movie, "title": "Movie", "screen": Dashboard()},
       {"level": 1, "icon": Icons.audiotrack, "title": "Singing", "screen": Dashboard()},
       {"level": 1, "icon": Icons.run_circle_outlined, "title": "Jogging", "screen": Dashboard()},
