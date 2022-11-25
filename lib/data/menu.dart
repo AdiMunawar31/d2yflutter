@@ -125,11 +125,11 @@ List dataList = [
     "icon": Icons.favorite,
     "title": "Favorite",
     "children": [
-      {"level": 1, "icon": Icons.water, "title": "Swimming", "screen": Dashboard()},
-      {"level": 1, "icon": Icons.sports_football, "title": "Football", "screen": Dashboard()},
-      {"level": 1, "icon": Icons.movie, "title": "Movie", "screen": Dashboard()},
-      {"level": 1, "icon": Icons.audiotrack, "title": "Singing", "screen": Dashboard()},
-      {"level": 1, "icon": Icons.run_circle_outlined, "title": "Jogging", "screen": Dashboard()},
+      {"level": 1, "icon": Icons.water, "title": "Swimming", "screen": const Dashboard()},
+      {"level": 1, "icon": Icons.sports_football, "title": "Football", "screen": const Dashboard()},
+      {"level": 1, "icon": Icons.movie, "title": "Movie", "screen": const Dashboard()},
+      {"level": 1, "icon": Icons.audiotrack, "title": "Singing", "screen": const Dashboard()},
+      {"level": 1, "icon": Icons.run_circle_outlined, "title": "Jogging", "screen": const Dashboard()},
     ]
   },
 ];

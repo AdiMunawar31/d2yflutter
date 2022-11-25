@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class MyExpanded extends StatelessWidget {
   const MyExpanded({super.key});
@@ -14,16 +12,20 @@ class MyExpanded extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(
-            height: 150,
-            color: Colors.white,
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.white,
+            ),
           ),
           Expanded(
+            flex: 2,
             child: Container(
               color: Colors.blue,
             ),
           ),
           Expanded(
+            flex: 2,
             child: Container(
               color: Colors.lightBlue,
             ),

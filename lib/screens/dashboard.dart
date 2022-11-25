@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widgets/models/menu_model.dart';
 
 class Dashboard extends StatelessWidget {
-  // const Dashboard(this.menuItem, {Key? key}) : super(key: key);
-  // // Declare a field that holds the User
-  // final Menu menuItem;
+  const Dashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,13 +9,13 @@ class Dashboard extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Dashboard"),
         ),
-        body: Center(
+        body: const Center(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 5),
+            padding: EdgeInsets.symmetric(horizontal: 5),
             child: Text(
               "Are you ready for  ?",
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.green),
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.green),
             ),
           ),
         ));

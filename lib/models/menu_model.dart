@@ -6,7 +6,7 @@ class Menu {
   int level = 0;
   IconData icon = Icons.drive_file_rename_outline;
   String title = "";
-  Widget screen = Dashboard();
+  Widget screen = const Dashboard();
   List<Menu> children = [];
   //default constructor
   Menu(this.level, this.icon, this.title, this.screen, this.children);
