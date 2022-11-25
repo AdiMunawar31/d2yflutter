@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/screens/dashboard.dart';
 import 'package:flutter_widgets/screens/widgets/container.dart';
+import 'package:flutter_widgets/screens/widgets/expanded.dart';
 
 List dataList = [
   //menu data item
@@ -23,18 +24,7 @@ List dataList = [
         "title": "Container",
         "screen": const MyContainer(),
       },
-      {
-        "level": 1,
-        "icon": Icons.lock,
-        "title": "Password",
-        "children": [
-          {
-            "title": "Change Password",
-          },
-          {"title": "Reset Password"},
-          {"title": "History Of change"},
-        ],
-      },
+      {"level": 1, "icon": Icons.expand, "title": "Expanded", "screen": const MyExpanded()},
       {"level": 1, "icon": Icons.delete_forever, "title": "Delete Account"}
     ]
   },
