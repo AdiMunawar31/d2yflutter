@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
           ),
           body: const Center(
             child: Text(
-              "Main Screen Contents...",
+              "D2Y CODING...",
               style: TextStyle(fontSize: 20),
             ),
           )),
